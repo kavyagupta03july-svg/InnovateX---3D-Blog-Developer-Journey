@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient matching InnovateX Brand -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="45%" stop-color="#635BFF" />
+      <stop offset="75%" stop-color="#9333EA" />
+      <stop offset="100%" stop-color="#E11D48" />
+    </linearGradient>
+
+    <!-- Star Glow Filter -->
+    <filter id="starGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Subtle Inner Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.4)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.1)" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base with CSS Gradient -->
+  <rect 
+    x="16" 
+    y="16" 
+    width="480" 
+    height="480" 
+    rx="130" 
+    ry="130" 
+    fill="url(#bgGrad)" 
+    stroke="url(#borderGrad)" 
+    stroke-width="6" 
+  />
+
+  <!-- Main InnovateX Center 4-Point Star (Sparkle) -->
+  <!-- Center: (240, 246), Radius: ~120 -->
+  <path
+    d="M 240 126
+       C 246 194, 256 210, 316 230
+       C 334 236, 334 256, 316 262
+       C 256 282, 246 298, 240 366
+       C 234 298, 224 282, 164 262
+       C 146 256, 146 236, 164 230
+       C 224 210, 234 194, 240 126 Z"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="26"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#starGlow)"
+  />
+
+  <!-- Satellite Small Star at Top Right -->
+  <path
+    d="M 370 148
+       C 372 165, 376 169, 393 171
+       C 397 172, 397 178, 393 179
+       C 376 181, 372 185, 370 202
+       C 368 185, 364 181, 347 179
+       C 343 178, 343 172, 347 171
+       C 364 169, 368 165, 370 148 Z"
+    fill="#FFFFFF"
+  />
+
+  <!-- Satellite Glowing Orb at Bottom Left -->
+  <circle cx="166" cy="346" r="22" fill="#FFFFFF" />
+</svg>

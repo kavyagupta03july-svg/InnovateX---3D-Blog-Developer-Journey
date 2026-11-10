@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #080B18;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+}
+
+/* 3D Transform Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.translate-z-6 {
+  transform: translateZ(24px);
+}
+
+.translate-z-10 {
+  transform: translateZ(40px);
+}
+
+.translate-z-12 {
+  transform: translateZ(48px);
+}
+
+.translate-z-16 {
+  transform: translateZ(64px);
+}
+
+/* 3D Glass Surface */
+.glass-panel {
+  background: rgba(16, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(16, 23, 42, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 91, 255, 0.25);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6), 0 0 30px -10px rgba(99, 91, 255, 0.2);
+}
+
+.glass-card-interactive {
+  background: rgba(16, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  background: rgba(22, 30, 56, 0.8);
+  border-color: rgba(99, 91, 255, 0.4);
+  box-shadow: 0 16px 32px -10px rgba(8, 11, 24, 0.8), 0 0 25px -8px rgba(0, 212, 255, 0.25);
+  transform: translateY(-4px) translateZ(10px);
+}
+
+/* Ambient dynamic grid */
+.tech-grid-bg {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(99, 91, 255, 0.15), transparent 45%),
+    radial-gradient(circle at 90% 40%, rgba(0, 212, 255, 0.12), transparent 40%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080B18;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* InnovateX Web Icon — Pure CSS & Gradient Styling */
+.innovatex-web-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4F46E5 0%, #635BFF 45%, #9333EA 75%, #E11D48 100%);
+  border-radius: 28%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 14px -2px rgba(99, 91, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.innovatex-web-icon-glow {
+  box-shadow: 0 0 20px 2px rgba(99, 91, 255, 0.5), 0 0 35px -5px rgba(225, 29, 72, 0.4);
+}
+
