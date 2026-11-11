@@ -7,6 +7,11 @@ Alongside the core application, this repository includes the **InnovateX 3D Blog
 🌐 **Live Platform:** [innovatex.cc.cd](https://innovatex.cc.cd)  
 ✍️ **Developer Blog:** [innovatex-blog.cc.cd](https://innovatex-blog.cc.cd)
 
+# InnovateX System Architecture Overview
+
+<img width="1367" height="1151" alt="Modern System Architecture Flowchart" src="https://github.com/user-attachments/assets/3d33fca6-85cb-49d6-9d39-9bc23a193124" />
+
+
 ---
 
 ## 🌟 Key Features
