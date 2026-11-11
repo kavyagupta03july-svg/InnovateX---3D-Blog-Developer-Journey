@@ -4,7 +4,7 @@ InnovateX is a full-stack student collaboration and opportunity platform designe
 
 Alongside the core application, this repository includes the **InnovateX 3D Blog & Developer Journey**—a visually immersive space documenting the building process, daily challenges, and technical architecture milestones.
 
-🌐 **Live Platform:** [innovatex.cc.cd](https://innovatex.cc.cd)  
+🌐 **Live Platform:** <button>[innovatex.cc.cd](https://innovatex.cc.cd)</button> 
 ✍️ **Developer Blog:** [innovatex-blog.cc.cd](https://innovatex-blog.cc.cd)
 
 # InnovateX System Architecture Overview
